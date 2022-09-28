@@ -25,12 +25,12 @@ body {
   background-clip: box;
 }
 .download {
-  padding: 3em 1em 1em 3em;
+  padding: 2em 1em 2em 1em;
   text-align: center;
   width: 60vw;
   border-radius: 24px;
   font-family: AmaticSC Bold;
-  font-size: 96px;
+  font-size: 64px;
   background-color: var(--brown);
   color: var(--coffee);
   text-decoration: none;
