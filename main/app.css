@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-@media only screen and (max-width: 100px) {
+@media only screen and (min-width: 100px) {
   .root {
     display: grid;
   }
@@ -99,7 +99,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .root {
     display: flex;
   }
@@ -182,7 +182,7 @@ body {
       animation-duration: 0.21s;
     }
     
-    #download-text:not(:active), #download-text:not(:focus), #download-text:not(:ccursor #download-text:not(:hover) {
+    #download-text:not(:active), #download-text:not(:focus), #download-text:not(:ccursor #download-text:not(:hover {
       border-radius: 24px;
       animation-name: roundBack;
       animation-duration: 0.21s;
