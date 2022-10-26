@@ -1,49 +1,190 @@
 :root {
-  --coffee: #ECDBBF;
-  --black: #242424;
-  --brown: #7A664B;
-  --gray: #484848;
-  --white: #FFF;
-  --transparent: #00000000;
-  --transparent-white: #24FFFFFF;
+  --hydra-black-shadow: #24242464;
+  --hydra-blue: #617ED1;
+  --hydra-pure-white: #FFF;
+  --hydra-white: #FFFFFF88;
+  --transparent: 00000000;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
-
-#root {
-  display: grid;
-  justify-items: center;
-  align-content: center;
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
-  background-image: url('../main/asset/img/cute.jpg');
-  background-size: cover;
-  background-clip: box;
+@media only screen and (min-width: 100px) {
+  .root {
+    display: grid;
+  }
+  
+  #splash {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: var(--hydra-blue);
+  }
+  
+  #splash-logo {
+    width: 16em;
+    height: 16em;
+    animation-name: logoBeat;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .container {
+        width: 90vw;
+        height: 50vh;
+        background-color: var(--transparent);
+    }
+   .content {
+        width: inherit;
+        height: 25vh;
+        background-color: inherit;
+    }
+    
+    #title {
+      font-family: Poppins Black;
+      font-size: 56px;
+      color: var(--hydra-pure-white);
+      animation-name: riseFade;
+      animation-duration: 4.1s;
+    }
+    
+    #description {
+      font-family: Poppins Regular;
+      font-size: 16px;
+      color: var(--hydra-pure-white);
+      animation-name: riseFade;
+      animation-duration: 4s;
+      animation-delay: 0.1s;
+    }
+    
+    #app-logo {
+      width: 12em;
+      height: 12em;
+    }
+    #download {
+      width: 18em;
+      height: 6em;
+      background-color: var(--transparent);
+    }
+    
+    #download-text {
+      width: inherit;
+      height: inherit;
+      font-family: Poppins Bold;
+      font-size: 36px;
+      color: var(--hydra-blue);
+      text-decoration: none;
+      background-color: var(--hydra-pure-white);
+    }
+    
+    #download {
+      animation-name: riseFade;
+      animation-duration: 5s;
+    }
+    
+    #download-text:active, #download-text:focus {
+      border-radius: 45px;
+      animation-name: deround;
+      animation-duration: 0.21s;
+    }
+    
+    #download-text:not(:active), #download-text:not(:focus) {
+      border-radius: 24px;
+      animation-name: roundBack;
+      animation-duration: 0.21s;
+    }
 }
-.download {
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  text-align: center;
-  width: 60vw;
-  border-radius: 24px;
-  font-family: AmaticSC Bold;
-  font-size: 86px;
-  background-color: var(--brown);
-  color: var(--coffee);
-  text-decoration: none;
-  outline: none;
-}
 
-.download:active {
-  background-color: var(--coffee);
-  color: var(--brown);
-  cursor: none;
-  text-decoration: none;
-}
-
-.download:link {
-  text-decoration: none;
+@media only screen and (min-width: 768px) {
+  .root {
+    display: flex;
+  }
+  
+  #splash {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: var(--hydra-blue);
+  }
+  
+  #splash-logo {
+    width: 1em;
+    height: 10em;
+    animation-name: logoBeat;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .container {
+        width: 48vw;
+        height: 100vh;
+        background-color: var(--transparent);
+    }
+  
+  .content {
+        width: inherit;
+        height: 50vh;
+        background-color: inherit;
+    }
+    
+    #app-logo {
+      width: 8em;
+      height: 8em;
+    }
+    
+    #title {
+      font-family: Poppins Black;
+      font-size: 56px;
+      color: var(--hydra-pure-white);
+      animation-name: riseFade;
+      animation-duration: 4.1s;
+    }
+    
+    #description {
+      font-family: Poppins Regular;
+      font-size: 16px;
+      color: var(--hydra-pure-white);
+      animation-name: riseFade;
+      animation-duration: 4s;
+      animation-delay: 0.1s;
+    }
+    #download {
+      width: 8em;
+      height: 4em;
+      background-color: var(--hydra-pure-white);
+    }
+    
+    #download {
+      animation-name: riseFade;
+      animation-duration: 5s;
+    }
+    
+    #download-text {
+      width: inherit;
+      height: inherit;
+      font-family: Poppins Bold;
+      font-size: 18px;
+      color: var(--hydra-blue);
+      text-decoration: none;
+      background-color: var(--transparent);
+    }
+    
+    #download-text:active, #download-text:focus, #download-text:cursor, #download-text:hover{
+      border-radius: 45px;
+      animation-name: deround;
+      animation-duration: 0.21s;
+    }
+    
+    #download-text:not(:active), #download-text:not(:focus), #download-text:not(:ccursor #download-text:not(:hover) {
+      border-radius: 24px;
+      animation-name: roundBack;
+      animation-duration: 0.21s;
+    }
 }
