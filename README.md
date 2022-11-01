@@ -4,12 +4,10 @@ The official download site of 1C(ONEC) app.
 ### Website
 
 <div align="center">
-<div>
+<a href="https://yerenzter.github.io/onec">
 <img src="https://github.com/Yerenzter/onec/raw/main/main/asset/img/icon.png" width="64" height="64">
-</div>
-<div>
-<a href="https://yerenzter.github.io/onec">1C | Download</a>
-</div>
+<p>1C | Download</p>
+</a>
 </div>
 
 ### Developer
