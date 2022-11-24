@@ -48,7 +48,7 @@ body {
     
     #title {
       font-family: Poppins Black;
-      font-size: 16px;
+      font-size: 36px;
       color: var(--hydra-pure-white);
       animation-name: riseFade;
       animation-duration: 4.1s;
