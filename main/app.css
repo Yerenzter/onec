@@ -9,12 +9,12 @@
 body {
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 @media only screen and (min-width: 100px) {
   .root {
     display: grid;
-    overflow-x: hidden;
-    overflow-y: scroll;
   }
   
   #splash {
@@ -48,7 +48,7 @@ body {
     
     #title {
       font-family: Poppins Black;
-      font-size: 24px;
+      font-size: 16px;
       color: var(--hydra-pure-white);
       animation-name: riseFade;
       animation-duration: 4.1s;
