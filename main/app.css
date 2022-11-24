@@ -13,6 +13,8 @@ body {
 @media only screen and (min-width: 100px) {
   .root {
     display: grid;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
   
   #splash {
